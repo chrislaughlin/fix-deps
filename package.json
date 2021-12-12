@@ -1,6 +1,6 @@
 {
     "name": "fix-dep-versions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -13,6 +13,6 @@
     },
     "repository": "https://github.com/chrislaughlin/fix-deps.git",
     "bin": {
-      "fix-dep-versions": "./index.js"
+        "fix-dep-versions": "index.js"
     }
 }
