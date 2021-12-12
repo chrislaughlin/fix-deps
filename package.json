@@ -11,5 +11,8 @@
     "dependencies": {
         "commander": "^8.3.0"
     },
-    "repository": "https://github.com/chrislaughlin/fix-deps.git"
+    "repository": "https://github.com/chrislaughlin/fix-deps.git",
+    "bin": {
+      "fix-dep-versions": "./index.js"
+    }
 }
