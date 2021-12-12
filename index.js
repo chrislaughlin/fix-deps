@@ -1,27 +1,19 @@
 #!/usr/bin/env node
-const { program } = require('commander');
 const updateDeps = require('./updateDeps');
+const options = process.argv.slice(2);
 
-program.version('0.0.1');
-
-program
-  .option('-s, --single', 'update single repo')
-  .option('-m, --multi <repos>', 'update multiple repos (commands separated)')
-  .option('-d, --dryRun', 'output changes but dont apply them');
-
-program.parse(process.argv);
+//options to object
+const optionsObj = options.reduce((acc, curr) => {
+    acc[curr] = true;
+    return acc;
+}, {});
 
 const {
     single,
-    multi,
-    dryRun,
-} = program.opts();
+    dry,
+} = optionsObj;
 
 if (single) {
-    updateDeps(dryRun);
+    updateDeps(dry);
     console.log('COMPLETE');
-}
-
-if (multi) {
-    console.log(`multi: ${multi}`);
 }
