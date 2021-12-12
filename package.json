@@ -1,5 +1,5 @@
 {
-    "name": "fix-deps",
+    "name": "fix-dep-versions",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
