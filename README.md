@@ -10,9 +10,9 @@ npm install
 ```
 
 ```bash
-npx fix-deps -s
+npx fix-dep-versions@latest single dry
 ```
 
 Command params:
-- s: single mode - updates the current repo you are in 
-- d: dry run - run the flow and outputs what would be update, but does not change the package file 
+- single - updates the current repo you are in 
+- dry - run the flow and outputs what would be update, but does not change the package file 
